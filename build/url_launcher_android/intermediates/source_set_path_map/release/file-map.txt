@@ -6,9 +6,9 @@ io.flutter.plugins.urllauncher.url_launcher_android-browser-1.5.0-4 /Users/way2w
 io.flutter.plugins.urllauncher.url_launcher_android-lifecycle-runtime-2.3.1-5 /Users/way2webworld/.gradle/caches/transforms-3/db4b39695b36fb6bc4e9dc229c8d81d0/transformed/lifecycle-runtime-2.3.1/res
 io.flutter.plugins.urllauncher.url_launcher_android-main-6 /Users/way2webworld/.pub-cache/hosted/pub.dev/url_launcher_android-6.2.1/android/src/main/res
 io.flutter.plugins.urllauncher.url_launcher_android-release-7 /Users/way2webworld/.pub-cache/hosted/pub.dev/url_launcher_android-6.2.1/android/src/release/res
-io.flutter.plugins.urllauncher.url_launcher_android-pngs-8 /Users/way2webworld/Downloads/flutter projects/Alpha Driver/build/url_launcher_android/generated/res/pngs/release
-io.flutter.plugins.urllauncher.url_launcher_android-resValues-9 /Users/way2webworld/Downloads/flutter projects/Alpha Driver/build/url_launcher_android/generated/res/resValues/release
-io.flutter.plugins.urllauncher.url_launcher_android-rs-10 /Users/way2webworld/Downloads/flutter projects/Alpha Driver/build/url_launcher_android/generated/res/rs/release
-io.flutter.plugins.urllauncher.url_launcher_android-mergeReleaseResources-11 /Users/way2webworld/Downloads/flutter projects/Alpha Driver/build/url_launcher_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
-io.flutter.plugins.urllauncher.url_launcher_android-mergeReleaseResources-12 /Users/way2webworld/Downloads/flutter projects/Alpha Driver/build/url_launcher_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
-io.flutter.plugins.urllauncher.url_launcher_android-merged_res-13 /Users/way2webworld/Downloads/flutter projects/Alpha Driver/build/url_launcher_android/intermediates/merged_res/release
+io.flutter.plugins.urllauncher.url_launcher_android-pngs-8 /Users/way2webworld/Downloads/flutter projects/Alpha_Driver/build/url_launcher_android/generated/res/pngs/release
+io.flutter.plugins.urllauncher.url_launcher_android-resValues-9 /Users/way2webworld/Downloads/flutter projects/Alpha_Driver/build/url_launcher_android/generated/res/resValues/release
+io.flutter.plugins.urllauncher.url_launcher_android-rs-10 /Users/way2webworld/Downloads/flutter projects/Alpha_Driver/build/url_launcher_android/generated/res/rs/release
+io.flutter.plugins.urllauncher.url_launcher_android-mergeReleaseResources-11 /Users/way2webworld/Downloads/flutter projects/Alpha_Driver/build/url_launcher_android/intermediates/incremental/release/mergeReleaseResources/merged.dir
+io.flutter.plugins.urllauncher.url_launcher_android-mergeReleaseResources-12 /Users/way2webworld/Downloads/flutter projects/Alpha_Driver/build/url_launcher_android/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+io.flutter.plugins.urllauncher.url_launcher_android-merged_res-13 /Users/way2webworld/Downloads/flutter projects/Alpha_Driver/build/url_launcher_android/intermediates/merged_res/release

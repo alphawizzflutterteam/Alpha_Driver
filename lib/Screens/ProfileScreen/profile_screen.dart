@@ -72,7 +72,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
-        toolbarHeight: height * 0.25,
+        toolbarHeight: height * 0.23,
         flexibleSpace: ProfileCard(
           name: user.fName,
           email: user.email,
@@ -323,9 +323,121 @@ class _ProfileScreenState extends State<ProfileScreen> {
             svgPath: 'assets/icons/Logout.svg',
             type: 'Logout',
             function: () {
-              SharedPref.shared.pref!.setString(PrefKeys.isLoggedIn, "0");
-              SharedPref.shared.pref!.setString(PrefKeys.token, "");
-              Get.offAll(const SignInWithPhone());
+              showDialog(
+                context: context,
+                builder: (ctx) => Dialog(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Container(
+                    // height: height * .35,
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 10, vertical: 16),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 80,
+                          height: 80,
+                          padding: const EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            color: colors.lightGrey,
+                            shape: BoxShape.circle,
+                          ),
+                          child: Image.asset(
+                            "assets/images/deactivate.png",
+                            fit: BoxFit.contain,
+                            color: Colors.black,
+                          ),
+                        ),
+                        Align(
+                          alignment: AlignmentDirectional(0, 0),
+                          child: Padding(
+                            padding: EdgeInsets.all(16),
+                            child: Text(
+                              'Are you sure you want to logout ?',
+                              textAlign: TextAlign.center,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodyMedium!
+                                  .copyWith(fontSize: 18),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Expanded(
+                                child: GestureDetector(
+                                  onTap: () => Navigator.pop(ctx),
+                                  child: Container(
+                                    height: 40,
+                                    alignment: Alignment.center,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      border: Border.all(
+                                        color: Color(0xFFC3C5DD),
+                                        width: 1,
+                                      ),
+                                    ),
+                                    child: Text(
+                                      'CANCEL',
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodyMedium!
+                                          .copyWith(
+                                            fontWeight: FontWeight.w500,
+                                          ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              VerticalDivider(),
+                              Expanded(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Get.back();
+                                    SharedPref.shared.pref!
+                                        .setString(PrefKeys.isLoggedIn, "0");
+                                    SharedPref.shared.pref!
+                                        .setString(PrefKeys.token, "");
+                                    Get.offAll(const SignInWithPhone());
+                                  },
+                                  child: Container(
+                                    alignment: Alignment.center,
+                                    height: 40,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFF0A9494),
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                    child: Text(
+                                      'DELETE',
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodyMedium!
+                                          .copyWith(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.w500,
+                                          ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              );
             },
           ),
           Divider(),

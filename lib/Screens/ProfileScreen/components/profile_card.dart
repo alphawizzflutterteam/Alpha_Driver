@@ -68,9 +68,10 @@ class ProfileCard extends StatelessWidget {
                       ),
                       GestureDetector(
                           onTap: onPress,
-                          child: SvgPicture.asset(
-                            'assets/icons/edit.svg',
-                            // color: appColorWhite,
+                          child: Image.asset(
+                            "assets/images/edit_btn.png",
+                            height: 25,
+                            width: 25,
                           )),
                     ],
                   ),

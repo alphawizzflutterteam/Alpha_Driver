@@ -39,6 +39,7 @@ class HomeDrawer extends StatelessWidget {
         backgroundColor: appColorWhite,
         surfaceTintColor: appPrimaryColor,
         child: ListView(
+          physics: NeverScrollableScrollPhysics(),
           padding: EdgeInsets.zero,
           children: [
             Container(
@@ -206,7 +207,7 @@ class HomeDrawer extends StatelessWidget {
             // ),
 
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.35,
+              height: MediaQuery.of(context).size.height * 0.34,
             ),
             InkWell(
               onTap: () {

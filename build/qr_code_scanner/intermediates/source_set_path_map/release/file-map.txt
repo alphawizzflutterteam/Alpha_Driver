@@ -15,9 +15,9 @@ net.touchcapture.qr.flutterqr.qr_code_scanner-appcompat-1.4.2-13 /Users/way2webw
 net.touchcapture.qr.flutterqr.qr_code_scanner-lifecycle-runtime-2.4.0-14 /Users/way2webworld/.gradle/caches/transforms-3/f64cb8f1dd8b51fd41bdab52ad57ba71/transformed/lifecycle-runtime-2.4.0/res
 net.touchcapture.qr.flutterqr.qr_code_scanner-main-15 /Users/way2webworld/.pub-cache/hosted/pub.dev/qr_code_scanner-1.0.1/android/src/main/res
 net.touchcapture.qr.flutterqr.qr_code_scanner-release-16 /Users/way2webworld/.pub-cache/hosted/pub.dev/qr_code_scanner-1.0.1/android/src/release/res
-net.touchcapture.qr.flutterqr.qr_code_scanner-pngs-17 /Users/way2webworld/Downloads/flutter projects/Alpha Driver/build/qr_code_scanner/generated/res/pngs/release
-net.touchcapture.qr.flutterqr.qr_code_scanner-resValues-18 /Users/way2webworld/Downloads/flutter projects/Alpha Driver/build/qr_code_scanner/generated/res/resValues/release
-net.touchcapture.qr.flutterqr.qr_code_scanner-rs-19 /Users/way2webworld/Downloads/flutter projects/Alpha Driver/build/qr_code_scanner/generated/res/rs/release
-net.touchcapture.qr.flutterqr.qr_code_scanner-mergeReleaseResources-20 /Users/way2webworld/Downloads/flutter projects/Alpha Driver/build/qr_code_scanner/intermediates/incremental/release/mergeReleaseResources/merged.dir
-net.touchcapture.qr.flutterqr.qr_code_scanner-mergeReleaseResources-21 /Users/way2webworld/Downloads/flutter projects/Alpha Driver/build/qr_code_scanner/intermediates/incremental/release/mergeReleaseResources/stripped.dir
-net.touchcapture.qr.flutterqr.qr_code_scanner-merged_res-22 /Users/way2webworld/Downloads/flutter projects/Alpha Driver/build/qr_code_scanner/intermediates/merged_res/release
+net.touchcapture.qr.flutterqr.qr_code_scanner-pngs-17 /Users/way2webworld/Downloads/flutter projects/Alpha_Driver/build/qr_code_scanner/generated/res/pngs/release
+net.touchcapture.qr.flutterqr.qr_code_scanner-resValues-18 /Users/way2webworld/Downloads/flutter projects/Alpha_Driver/build/qr_code_scanner/generated/res/resValues/release
+net.touchcapture.qr.flutterqr.qr_code_scanner-rs-19 /Users/way2webworld/Downloads/flutter projects/Alpha_Driver/build/qr_code_scanner/generated/res/rs/release
+net.touchcapture.qr.flutterqr.qr_code_scanner-mergeReleaseResources-20 /Users/way2webworld/Downloads/flutter projects/Alpha_Driver/build/qr_code_scanner/intermediates/incremental/release/mergeReleaseResources/merged.dir
+net.touchcapture.qr.flutterqr.qr_code_scanner-mergeReleaseResources-21 /Users/way2webworld/Downloads/flutter projects/Alpha_Driver/build/qr_code_scanner/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+net.touchcapture.qr.flutterqr.qr_code_scanner-merged_res-22 /Users/way2webworld/Downloads/flutter projects/Alpha_Driver/build/qr_code_scanner/intermediates/merged_res/release

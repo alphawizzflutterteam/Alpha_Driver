@@ -41,31 +41,32 @@ class _OtpVerifyByNumberState extends State<OtpVerifyByNumber> {
     final th = Theme.of(context).textTheme;
     final screenHeight = MediaQuery.of(context).size.height;
 
-    return Stack(
-      children: [
-        Container(
-          height: screenHeight * .35,
-          decoration: const BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage("assets/images/onboarding_bg-light.png"))),
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios),
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
-        Scaffold(
-          appBar: AppBar(
-            leading: IconButton(
-              icon: Icon(Icons.arrow_back_ios),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
-            title: Center(
-              child: Text(
-                'Verify Number',
-                style: th.bodyLarge?.copyWith(
-                    fontWeight: FontWeight.w600, color: appColorBlack),
-              ),
-            ),
+        title: Center(
+          child: Text(
+            'Verify Number',
+            style: th.bodyLarge
+                ?.copyWith(fontWeight: FontWeight.w600, color: appColorBlack),
           ),
-          body: Padding(
+        ),
+      ),
+      body: Stack(
+        children: [
+          Container(
+            height: screenHeight * .35,
+            decoration: const BoxDecoration(
+                image: DecorationImage(
+                    image:
+                        AssetImage("assets/images/onboarding_bg-light.png"))),
+          ),
+          Padding(
               padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
               child: ListView(
                 children: [
@@ -172,8 +173,8 @@ class _OtpVerifyByNumberState extends State<OtpVerifyByNumber> {
                       ])),
                 ],
               )),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

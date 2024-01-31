@@ -34,7 +34,6 @@ class _VerifyByNumberState extends State<VerifyByNumber> {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: Colors.white,
       body: Stack(
         children: [
           Align(
