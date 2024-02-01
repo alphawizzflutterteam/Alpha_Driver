@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">694900479424-8f80r9sm8lbemlkrldmci8ndfffkebd8.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">694900479424</string>
+    <string name="google_api_key" translatable="false">AIzaSyBoopSULQ0kY3SvSxbl6ONsNtSj5QtiMPc</string>
+    <string name="google_app_id" translatable="false">1:694900479424:android:620b990634c6644f132425</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBoopSULQ0kY3SvSxbl6ONsNtSj5QtiMPc</string>
+    <string name="google_storage_bucket" translatable="false">alpha-e-commerce-1741e.appspot.com</string>
+    <string name="project_id" translatable="false">alpha-e-commerce-1741e</string>
+</resources>

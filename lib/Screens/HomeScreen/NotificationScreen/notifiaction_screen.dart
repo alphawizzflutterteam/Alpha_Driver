@@ -52,7 +52,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
         ),
       ),
       body: controller.isLoading.value
-          ? CircularProgressIndicator()
+          ? Center(child: CircularProgressIndicator())
           : ListView.builder(
               itemCount: controller.noti.length,
               itemBuilder: (context, index) {
