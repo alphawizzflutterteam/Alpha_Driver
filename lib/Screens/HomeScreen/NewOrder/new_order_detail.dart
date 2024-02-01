@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:work/Provider/order_detail_controller.dart';
 import 'package:work/Screens/HomeScreen/NewOrder/components/order_delivery_status.dart';
@@ -8,6 +9,7 @@ import 'package:work/Screens/HomeScreen/NewOrder/components/pickup_address.dart'
 import 'package:work/helper/CustomWidgets/base_scaffold.dart';
 import 'package:work/helper/CustomWidgets/custom_button.dart';
 import 'package:work/helper/app_constant.dart';
+import 'package:work/utilities/color.dart';
 
 import '../../OrderScreens/OrderShipment/compoments/price_details.dart';
 import 'components/seller_detail.dart';
@@ -143,7 +145,116 @@ class _NewOrderDetailState extends State<NewOrderDetail> {
                                   "order_id": widget.id,
                                   "status": "reject"
                                 };
-                                controller.acceptRejectOrder(map, context);
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext ctx) {
+                                    return Dialog(
+                                      shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(15)),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius:
+                                                BorderRadius.circular(15)),
+                                        child: Padding(
+                                          padding: const EdgeInsets.symmetric(
+                                              vertical: 16, horizontal: 10),
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.min,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              SvgPicture.asset(
+                                                "assets/icons/cancel.svg",
+                                                height: 90,
+                                                width: 90,
+                                                color: Colors.red,
+                                              ),
+                                              Text(
+                                                'Do you want to cancel this order.',
+                                                textAlign: TextAlign.center,
+                                                style: TextStyle(
+                                                  fontSize: 24,
+                                                ),
+                                              ),
+                                              Text(
+                                                'Cancel this order',
+                                                style: TextStyle(
+                                                  color: colors.greyText,
+                                                ),
+                                              ),
+                                              Divider(
+                                                  color: Colors.transparent),
+                                              Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment
+                                                        .spaceAround,
+                                                children: [
+                                                  GestureDetector(
+                                                    onTap: () {
+                                                      Navigator.pop(ctx);
+                                                    },
+                                                    child: Container(
+                                                      alignment:
+                                                          Alignment.center,
+                                                      padding: const EdgeInsets
+                                                          .symmetric(
+                                                          horizontal: 16,
+                                                          vertical: 10),
+                                                      decoration: BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(10),
+                                                          border: Border.all(
+                                                              color: colors
+                                                                  .lightGrey,
+                                                              width: 2)),
+                                                      child: Text(
+                                                        'CANCEL',
+                                                        style: TextStyle(
+                                                            color: Colors.black,
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .w500),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  ElevatedButton(
+                                                    style: ElevatedButton
+                                                        .styleFrom(
+                                                      backgroundColor: Colors
+                                                          .red, // Set your desired button color
+                                                      shape:
+                                                          RoundedRectangleBorder(
+                                                        borderRadius:
+                                                            BorderRadius.circular(
+                                                                8.0), // Adjust the radius as needed
+                                                      ),
+                                                    ),
+                                                    child: const Text(
+                                                      'DELETE',
+                                                      style: TextStyle(
+                                                          color: Colors.white),
+                                                    ),
+                                                    onPressed: () async {
+                                                      await controller
+                                                          .acceptRejectOrder(
+                                                              map, context);
+                                                      Get.back();
+                                                    },
+                                                  ),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                );
                               },
                               style: ElevatedButton.styleFrom(
                                 primary:

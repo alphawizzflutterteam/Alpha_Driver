@@ -3,14 +3,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:work/Models/profileModel.dart';
 import 'package:work/Screens/HomeScreen/NewOrder/new_order.dart';
 import 'package:work/Screens/PaymentScreen/payment_screen.dart';
 import 'package:work/Screens/ProfileScreen/profile_screen.dart';
 import 'package:work/Screens/SinginScreens/SignInWithPhone/sign_in_wit_phone.dart';
 import 'package:work/Screens/WalletScreen/wallet_screen.dart';
 import 'package:work/Screens/allOrders/allOrderScreen.dart';
-import 'package:work/Screens/review/ui/reviewScreen.dart';
+import 'package:work/helper/CustomWidgets/logoutSheet.dart';
 import 'package:work/helper/app_constant.dart';
 import 'package:work/utilities/shared_pref..dart';
 
@@ -207,7 +206,7 @@ class HomeDrawer extends StatelessWidget {
             // ),
 
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.34,
+              height: MediaQuery.of(context).size.height * 0.3,
             ),
             InkWell(
               onTap: () {
@@ -223,9 +222,10 @@ class HomeDrawer extends StatelessWidget {
                       color: Colors.red,
                     )),
                 onTap: () {
-                  SharedPref.shared.pref?.setString(PrefKeys.isLoggedIn, "0");
-
-                  Get.offAll(const SignInWithPhone());
+                  showModalBottomSheet(
+                    context: context,
+                    builder: (context) => LogoutSheet(),
+                  );
                 },
               ),
             ),

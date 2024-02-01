@@ -1,23 +1,17 @@
 import 'dart:convert';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:work/Models/profileModel.dart';
 import 'package:work/Screens/HomeScreen/NotificationScreen/notifiaction_screen.dart';
 import 'package:work/helper/CustomWidgets/comman_header.dart';
 import 'package:work/helper/CustomWidgets/drawer_home.dart';
 import 'package:work/helper/app_constant.dart';
-import 'package:work/utilities/app_color.dart';
 import 'package:work/utilities/color.dart';
 import 'package:work/utilities/shared_pref..dart';
-import 'package:work/utilities/sizedBox.dart';
-import '../../Models/person_details.dart';
 import '../../Provider/current_order_controller.dart';
 import '../../helper/CustomWidgets/default_button.dart';
-import '../OrderScreens/QrScreen/qr_screen.dart';
 import 'components/delivery_card.dart';
 import 'components/delivery_status_card.dart';
 

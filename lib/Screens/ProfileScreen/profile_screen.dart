@@ -17,12 +17,12 @@ import 'package:work/Screens/ProfileScreen/editProfiePages/edit_passsword.dart';
 import 'package:work/Screens/ProfileScreen/editProfiePages/edit_vechicle_detail.dart';
 import 'package:work/Screens/ProfileScreen/edit_profile.dart';
 import 'package:work/Screens/SinginScreens/SignInWithPhone/sign_in_wit_phone.dart';
+import 'package:work/helper/CustomWidgets/logoutSheet.dart';
 import 'package:work/helper/app_constant.dart';
 import 'package:work/utilities/api_manager/apis.dart';
 import 'package:work/utilities/api_manager/http_client.dart';
 import 'package:work/utilities/app_color.dart';
 import 'package:work/utilities/color.dart';
-import 'package:work/utilities/mediaQuery.dart';
 import 'package:work/utilities/shared_pref..dart';
 import 'package:work/utilities/utils.dart';
 
@@ -323,120 +323,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
             svgPath: 'assets/icons/Logout.svg',
             type: 'Logout',
             function: () {
-              showDialog(
+              showModalBottomSheet(
                 context: context,
-                builder: (ctx) => Dialog(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
-                  child: Container(
-                    // height: height * .35,
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 10, vertical: 16),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          width: 80,
-                          height: 80,
-                          padding: const EdgeInsets.all(8),
-                          decoration: BoxDecoration(
-                            color: colors.lightGrey,
-                            shape: BoxShape.circle,
-                          ),
-                          child: Image.asset(
-                            "assets/images/deactivate.png",
-                            fit: BoxFit.contain,
-                            color: Colors.black,
-                          ),
-                        ),
-                        Align(
-                          alignment: AlignmentDirectional(0, 0),
-                          child: Padding(
-                            padding: EdgeInsets.all(16),
-                            child: Text(
-                              'Are you sure you want to logout ?',
-                              textAlign: TextAlign.center,
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodyMedium!
-                                  .copyWith(fontSize: 18),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Expanded(
-                                child: GestureDetector(
-                                  onTap: () => Navigator.pop(ctx),
-                                  child: Container(
-                                    height: 40,
-                                    alignment: Alignment.center,
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(10),
-                                      border: Border.all(
-                                        color: Color(0xFFC3C5DD),
-                                        width: 1,
-                                      ),
-                                    ),
-                                    child: Text(
-                                      'CANCEL',
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .bodyMedium!
-                                          .copyWith(
-                                            fontWeight: FontWeight.w500,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              VerticalDivider(),
-                              Expanded(
-                                child: GestureDetector(
-                                  onTap: () {
-                                    Get.back();
-                                    SharedPref.shared.pref!
-                                        .setString(PrefKeys.isLoggedIn, "0");
-                                    SharedPref.shared.pref!
-                                        .setString(PrefKeys.token, "");
-                                    Get.offAll(const SignInWithPhone());
-                                  },
-                                  child: Container(
-                                    alignment: Alignment.center,
-                                    height: 40,
-                                    decoration: BoxDecoration(
-                                      color: Color(0xFF0A9494),
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                    child: Text(
-                                      'DELETE',
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .bodyMedium!
-                                          .copyWith(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.w500,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                builder: (context) => LogoutSheet(),
               );
             },
           ),

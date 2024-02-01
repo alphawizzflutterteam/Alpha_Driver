@@ -15,11 +15,11 @@ class MenuType extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final th = Theme.of(context).textTheme;
-    return GestureDetector(
-      onTap: function,
-      child: Container(
-        height: 40,
-        padding: EdgeInsets.symmetric(horizontal: defaultPadding),
+    return Container(
+      height: 40,
+      padding: EdgeInsets.symmetric(horizontal: defaultPadding),
+      child: GestureDetector(
+        onTap: function,
         child: Row(
           children: [
             Expanded(
