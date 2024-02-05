@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:intl/intl.dart';
+import 'package:work/Screens/OrderScreens/OrderShipment/rescheduleOrderPopup.dart';
 import 'package:work/Screens/acceptPayment/acceptPayment.dart';
 import 'package:work/helper/CustomWidgets/base_scaffold.dart';
 
@@ -72,13 +73,9 @@ class _OrderShipmentState extends State<OrderShipment> {
 
       String formattedDate = DateFormat('yyyy-MM-dd').format(selectedDate);
       print(formattedDate);
+      orderDetailController.shipmentDate.value = formattedDate;
 
-      Map data = {
-        "order_id": widget.list.orderId.toString(),
-        "expected_delivery_date": formattedDate,
-        "cause": "Unable to delivery order"
-      };
-      orderDetailController.rescheduleOrder(data, context);
+      showResheduleDialog(context, orderDetailController.orderId.value);
     }
   }
 
@@ -114,7 +111,7 @@ class _OrderShipmentState extends State<OrderShipment> {
                     isPaid: widget.isPaid,
                   ));
                 },
-                buttonText1: 'RESCHUDLE',
+                buttonText1: 'RESCHEDULE',
                 buttonText2: 'CONFIRM',
               ),
             ),

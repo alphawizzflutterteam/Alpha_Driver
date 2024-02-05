@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:work/Models/profileModel.dart';
 import 'package:work/Provider/signupController.dart';
 import 'package:work/Screens/HomeScreen/home_screen.dart';
 import 'package:work/Screens/SinginScreens/SignInWithPhone/sign_in_wit_phone.dart';
@@ -16,6 +17,9 @@ class EditProfileController extends GetxController {
   File? selectedFileLicence;
   File? selectedFileVehicle;
   File? selecteduserImage;
+  late Datum user;
+  var model =
+      jsonDecode(SharedPref.shared.pref!.getString(PrefKeys.userDetails)!);
 
   TextEditingController numberController = TextEditingController();
 
@@ -366,6 +370,7 @@ class EditProfileController extends GetxController {
     print(res["status"]);
     if (res['status'] == true) {
       getProfile();
+      Get.back();
 
       // await homeProvider.getProfileAPI({}, context);
       // Routes.navigateToPreviousScreen(context);
@@ -379,21 +384,21 @@ class EditProfileController extends GetxController {
 
     final res = await HTTPClient.getProfileResponse(APIs.profile);
 
-    isLoading = false.obs;
-    update();
     if (res.status == true) {
       SharedPref.shared.pref?.setString(PrefKeys.name, res.data[0].fName);
       SharedPref.shared.pref?.setString(PrefKeys.image, res.data[0].image);
-
+      user = res.data[0];
       SharedPref.shared.pref
           ?.setString(PrefKeys.userDetails, jsonEncode(res.data[0]));
-      Get.back();
-      Get.back();
+
+      update();
     } else {
       Utils.showFlushBarWithMessage(
         'Something went wrong!!!',
         Get.context!,
       );
     }
+    isLoading = false.obs;
+    update();
   }
 }

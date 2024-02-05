@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:2:5-33:19
+INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:4:5-35:19
 MERGED from [:firebase_messaging] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:15:5-48:19
 MERGED from [:firebase_messaging] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:15:5-48:19
 MERGED from [:firebase_core] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-15:19
@@ -58,17 +58,17 @@ MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] /Users/alphamac/.grad
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.10.1] /Users/alphamac/.gradle/caches/transforms-3/cd4004a5a8de6d0562a63088cfc87de7/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:3:9-37
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:5:9-37
 	android:icon
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:5:9-43
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:7:9-43
 	android:name
 		INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:4:9-42
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:6:9-42
 manifest
-ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-34:12
+ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-36:12
 MERGED from [:shared_preferences_android] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/shared_preferences_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [:firebase_messaging] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-50:12
 MERGED from [:firebase_core] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-17:12
@@ -138,23 +138,33 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/alphamac/.gradle/c
 MERGED from [androidx.print:print:1.0.0] /Users/alphamac/.gradle/caches/transforms-3/e58fb0760379ed8999a2655d9954dd85/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] /Users/alphamac/.gradle/caches/transforms-3/1f817fc72e1bbcf97e712fc2c8267ccf/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:17:1-56:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/alphamac/.gradle/caches/transforms-3/6ccbe628ff55214799906596114cb282/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-36:12
 	package
 		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:70-99
 		INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-36:12
 		INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:1-36:12
 		INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.SCHEDULE_EXACT_ALARM
+ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:2:1-75
+MERGED from [:flutter_local_notifications] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:12:5-79
+MERGED from [:flutter_local_notifications] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:2:18-72
+uses-permission#android.permission.USE_EXACT_ALARM
+ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:3:1-70
+	android:name
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:3:18-67
 uses-sdk
 INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml
@@ -310,43 +320,43 @@ INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/
 		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml
 activity#com.alphacom.driver.MainActivity
-ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:6:9-26:20
+ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:8:9-28:20
 	android:launchMode
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:9:13-43
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:11:13-43
 	android:hardwareAccelerated
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:12:13-47
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:14:13-47
 	android:windowSoftInputMode
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:13:13-55
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:15:13-55
 	android:exported
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:8:13-36
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:10:13-36
 	android:configChanges
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:11:13-163
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:13:13-163
 	android:theme
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:10:13-47
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:12:13-47
 	android:name
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:7:13-41
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:9:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:18:13-21:17
+ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:20:13-23:17
 	android:resource
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:20:15-52
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:22:15-52
 	android:name
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:19:15-70
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:21:15-70
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:22:13-25:29
+ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:24:13-27:29
 action#android.intent.action.MAIN
-ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:23:17-68
+ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:25:17-68
 	android:name
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:23:25-66
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:24:17-76
+ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:26:17-76
 	android:name
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:26:27-74
 meta-data#flutterEmbedding
-ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:30:9-32:33
+ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:32:9-34:33
 	android:value
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:32:13-30
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:34:13-30
 	android:name
-		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:31:13-44
+		ADDED from /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/android/app/src/main/AndroidManifest.xml:33:13-44
 uses-permission#android.permission.INTERNET
 ADDED from [:firebase_messaging] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-67
 MERGED from [com.google.firebase:firebase-iid:21.1.0] /Users/alphamac/.gradle/caches/transforms-3/8f3111fb792adc1ed57af19a19b027e9/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:23:5-67
@@ -519,10 +529,6 @@ uses-permission#android.permission.USE_FULL_SCREEN_INTENT
 ADDED from [:flutter_local_notifications] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-81
 	android:name
 		ADDED from [:flutter_local_notifications] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-78
-uses-permission#android.permission.SCHEDULE_EXACT_ALARM
-ADDED from [:flutter_local_notifications] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:12:5-79
-	android:name
-		ADDED from [:flutter_local_notifications] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:12:22-76
 receiver#com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver
 ADDED from [:flutter_local_notifications] /Users/alphamac/Desktop/Flutter Projects/Alpha_Driver/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-18:40
 	android:exported

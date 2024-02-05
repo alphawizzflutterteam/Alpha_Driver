@@ -18,6 +18,7 @@ class OrderDetailController extends GetxController {
   var priceList = <PriceDetail>[].obs;
   var responseProduct;
   RxString productId = ''.obs;
+  RxString shipmentDate = ''.obs;
   RxString orderId = ''.obs;
   RxString productname = ''.obs;
 
@@ -60,7 +61,7 @@ class OrderDetailController extends GetxController {
 
   rescheduleOrder(dynamic map, BuildContext context) async {
     final res = await HTTPClient.putRequest(APIs.scheduleDelivery, map);
-    Utils.showFlushBarWithMessage(res["message"], context);
+    Utils.showFlushBarWithMessage(res["message"], Get.context!);
   }
 
   cancelOrder(dynamic map, BuildContext context) async {
@@ -82,16 +83,18 @@ class OrderDetailController extends GetxController {
   }
 
   acceptRejectOrder(dynamic params, BuildContext context) async {
-    isLoading = true.obs;
-    update();
+    // isLoading = true.obs;
+    // update();
 
     final res = await HTTPClient.postRequest(APIs.orderAction, params);
 
     print(res.toString());
-    Get.offAll(HomeScreen());
+    // Utils.showFlushBarWithMessage(res["message"], Get.context!);
+    // Future.delayed(Duration(seconds: 2), () {
+      Get.offAll(HomeScreen());
+ //   });
 
     // Get.back();
-    // Utils.showFlushBarWithMessage(res["message"], Get.context!);
     // NewOrderController controller = NewOrderController();
     // controller.list.clear();
     // controller.getNewOrders();

@@ -23,6 +23,9 @@ class WalletController extends GetxController {
     final res = await HTTPClient.postRequest(APIs.withdrawMoney, map);
     isLoading = false.obs;
     update();
+    await getProfile();
+
+    getWalletHistory();
 
     Utils.showFlushBarWithMessage(res["message"], context);
   }

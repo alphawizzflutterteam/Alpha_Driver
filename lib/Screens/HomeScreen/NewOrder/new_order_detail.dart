@@ -167,23 +167,16 @@ class _NewOrderDetailState extends State<NewOrderDetail> {
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
                                             children: [
-                                              SvgPicture.asset(
-                                                "assets/icons/cancel.svg",
-                                                height: 90,
-                                                width: 90,
-                                                color: Colors.red,
+                                              Image.asset(
+                                                "assets/images/cancel.png",
+                                                height: 80,
+                                                width: 80,
                                               ),
                                               Text(
-                                                'Do you want to cancel this order.',
+                                                'Do you want to reject this order?',
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                   fontSize: 24,
-                                                ),
-                                              ),
-                                              Text(
-                                                'Cancel this order',
-                                                style: TextStyle(
-                                                  color: colors.greyText,
                                                 ),
                                               ),
                                               Divider(
@@ -235,7 +228,7 @@ class _NewOrderDetailState extends State<NewOrderDetail> {
                                                       ),
                                                     ),
                                                     child: const Text(
-                                                      'DELETE',
+                                                      'REJECT',
                                                       style: TextStyle(
                                                           color: Colors.white),
                                                     ),

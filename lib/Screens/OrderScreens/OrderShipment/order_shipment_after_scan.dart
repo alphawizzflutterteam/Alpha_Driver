@@ -24,7 +24,7 @@ class OrderShipmentAfterScan extends StatelessWidget {
         isScan: true,
         onPressed1: () {},
         onPressed2: () {},
-        buttonText1: 'RESCHUDLE',
+        buttonText1: 'RESCHEDULE',
         buttonText2: 'CONFIRM',
       ),
       child: ListView(

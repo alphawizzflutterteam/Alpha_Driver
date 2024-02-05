@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:work/Provider/order_detail_controller.dart';
 import 'package:work/Screens/HomeScreen/home_screen.dart';
+import 'package:work/utilities/app_color.dart';
 import 'package:work/utilities/color.dart';
 
 class CancelOrderPopup extends StatefulWidget {
@@ -36,11 +37,8 @@ class _CancelOrderPopupState extends State<CancelOrderPopup> {
         children: [
           Stack(
             children: [
-              Image.asset(
-                "assets/images/bg-icon.png",
-                width: 80,
-                height: 80,
-              ),
+              Image.asset("assets/images/bg-icon.png",
+                  width: 80, height: 80, color: AppColors.backgroundblueColour),
               Padding(
                 padding: const EdgeInsets.all(10),
                 child: Image.asset(

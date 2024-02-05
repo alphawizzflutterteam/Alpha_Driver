@@ -17,6 +17,22 @@ class BaseScaffold extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
+        leading: IconButton(
+            alignment: Alignment.bottomLeft,
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(
+              CupertinoIcons.left_chevron,
+              color: appColorWhite,
+            )),
+
+        title: Text(
+          title,
+          style: th.bodyMedium?.copyWith(
+              fontSize: 18, fontWeight: FontWeight.w700, color: appColorWhite),
+          textAlign: TextAlign.left,
+        ),
         //toolbarHeight: 82,
         backgroundColor: appThemeColor,
         flexibleSpace: Container(
@@ -27,39 +43,6 @@ class BaseScaffold extends StatelessWidget {
                   right: -10,
                   bottom: 0,
                   child: Image.asset('assets/icons/appbar_bg.png')),
-              Container(
-                height: 125,
-                padding: EdgeInsets.symmetric(
-                    horizontal: defaultPadding, vertical: 5),
-                alignment: Alignment.bottomCenter,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Expanded(
-                      child: IconButton(
-                          alignment: Alignment.bottomLeft,
-                          onPressed: () {
-                            Navigator.pop(context);
-                          },
-                          icon: Icon(
-                            CupertinoIcons.left_chevron,
-                            color: appColorWhite,
-                          )),
-                    ),
-                    Expanded(
-                      flex: 2,
-                      child: Text(
-                        title,
-                        style: th.bodyMedium?.copyWith(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w700,
-                            color: appColorWhite),
-                        textAlign: TextAlign.left,
-                      ),
-                    )
-                  ],
-                ),
-              )
             ],
           ),
         ),

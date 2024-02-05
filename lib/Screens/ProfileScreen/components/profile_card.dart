@@ -60,6 +60,7 @@ class ProfileCard extends StatelessWidget {
                           child: Icon(
                             Icons.chevron_left,
                             color: appColorWhite,
+                            size: 30,
                           )),
                       Text(
                         'Profile',

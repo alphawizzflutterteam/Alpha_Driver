@@ -98,14 +98,15 @@ class AllOrderCardWidget extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(0.0),
                       child: SizedBox(
-                        width: 50,
+                        width: 80,
                         child: Center(
                           child: Text(
-                            list.orderStatus,
+                            list.orderStatus.toUpperCase(),
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(
                                 fontSize: 12.0,
+                                letterSpacing: 0.5,
                                 fontWeight: FontWeight.bold,
                                 color: appColorWhite),
                           ),
