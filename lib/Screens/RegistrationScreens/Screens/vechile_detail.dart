@@ -178,6 +178,9 @@ class _VehicleDetailState extends State<VehicleDetail> {
                 signUpContr.verifyVehicle();
                 //  _increment();
               }),
+          SizedBox(
+            height: 10,
+          )
         ]),
       ),
     );

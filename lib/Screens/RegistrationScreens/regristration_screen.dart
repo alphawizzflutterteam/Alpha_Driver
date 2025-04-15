@@ -272,7 +272,7 @@ iconTitle(text, currentState, index) {
     children: [
       Visibility(
         visible: index == 0,
-        child: SizedBox(
+        child: const SizedBox(
           width: 35,
         ),
       ),
@@ -291,12 +291,14 @@ iconTitle(text, currentState, index) {
               fontFamily: GoogleFonts.poppins().fontFamily,
               fontSize: 12,
               fontWeight: FontWeight.w400,
-              color: currentState == index ? Colors.black : Color(0xffC3C5DD)),
+              color: currentState == index
+                  ? Colors.black
+                  : const Color(0xffC3C5DD)),
         ),
       ),
       Visibility(
         visible: index == 7,
-        child: SizedBox(
+        child: const SizedBox(
           width: 10,
         ),
       ),

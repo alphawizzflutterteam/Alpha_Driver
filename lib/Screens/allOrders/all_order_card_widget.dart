@@ -87,7 +87,7 @@ class AllOrderCardWidget extends StatelessWidget {
                                   )));
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: list.orderStatus != "failed"
+                      backgroundColor: list.orderStatus != "failed"
                           ? appThemeColor
                           : Colors.red, // Set your desired button color
                       shape: RoundedRectangleBorder(

@@ -76,7 +76,8 @@ class OrderCardWidget extends StatelessWidget {
                                 )));
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: appThemeColor, // Set your desired button color
+                    backgroundColor:
+                        appThemeColor, // Set your desired button color
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(
                           8.0), // Adjust the radius as needed

@@ -161,6 +161,9 @@ class _DrivingLicenceState extends State<DrivingLicence> {
             onPressed: () {
               signUpContr.verifyLicence();
             }),
+        SizedBox(
+          height: 10,
+        )
       ]),
     );
   }

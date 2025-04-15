@@ -250,7 +250,7 @@ class _NewOrderDetailState extends State<NewOrderDetail> {
                                 );
                               },
                               style: ElevatedButton.styleFrom(
-                                primary:
+                                backgroundColor:
                                     Colors.red, // Set your desired button color
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(
@@ -277,7 +277,7 @@ class _NewOrderDetailState extends State<NewOrderDetail> {
                                 controller.acceptRejectOrder(map, context);
                               },
                               style: ElevatedButton.styleFrom(
-                                primary:
+                                backgroundColor:
                                     appPrimaryColor, // Set your desired button color
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(

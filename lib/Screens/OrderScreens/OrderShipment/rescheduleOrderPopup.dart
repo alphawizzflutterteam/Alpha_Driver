@@ -117,8 +117,8 @@ class _RescheduleOrderDialogWidgetState
             width: 200,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: colors.buttonColor,
-                onPrimary: Colors.white,
+                foregroundColor: Colors.white,
+                backgroundColor: colors.buttonColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
